@@ -134,12 +134,12 @@ function MovieForm() {
           </label>
         </FormGroup>
         {errors.length > 0 && (
-        <ul style={{ color: "red" }}>
-        {errors.map((error) => (
+    <ul style={{ color: "red" }}>
+      {errors.map((error) => (
         <li key={error}>{error}</li>
       ))}
     </ul>
-      )}
+  )}
         <SubmitButton type="submit">Add Movie</SubmitButton>
       </form>
     </Wrapper>
